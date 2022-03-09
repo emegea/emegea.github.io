@@ -1,0 +1,39 @@
+<div class="encabezado col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <h2 class="titulo">Educación</h2>
+    <div>
+        <a href="#">
+            <i class="fa fa-pen iconito" onclick="showEditProfileModal()"></i>
+        </a>
+        <a href="#">
+            <i class="fa fa-plus iconito" onclick="showEditProfileModal()"></i>
+        </a>    
+    </div>
+</div>
+<section class="card col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<ul>
+    <li class="educacion" *ngFor="let educacion of educacionLista">
+    <article class="flexin col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="flexin col-xs-12 col-sm-11 col-md-11 col-lg-11">
+            <img 
+                [src]="educacion.imagen" 
+                alt="" 
+                class="agranda eduAvatar col-xs-2 col-sm-2 col-md-2 col-lg-2"
+            />
+            <div>
+                <h3>{{educacion.titulo}}</h3>
+                <p>{{educacion.instituto}}</p>
+                <h4>{{educacion.fecha}}</h4>
+                <h4>{{educacion.localidad}}</h4>
+            </div>
+        </div>
+        <div class="iconitos col-xs-12 col-sm-1 col-md-1 col-lg-1">
+            <a href="#">
+                <i class="fa fa-pen iconito" onclick="showEditProfileModal()"></i>
+            </a>
+            <a href="#">
+                <i class="fa fa-trash iconito" onclick="showEditProfileModal()"></i>
+            </a>
+        </div>
+    </article>
+    </li>
+</ul>

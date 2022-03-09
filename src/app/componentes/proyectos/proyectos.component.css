@@ -1,0 +1,33 @@
+.proyectos ul li {
+    margin:0 0 2% 0;
+}
+
+.proyecto {
+    padding:0 2% 2% 2%;
+}
+
+.proyecto:first-child {
+    padding-top:2%;
+}
+.proyecto article { 
+    border-bottom:1px #b6b6b6 solid;
+    padding:0 0 2% 0;
+}
+.proyecto h4 {
+    font-size:18px;
+}
+.mostrarModal {
+    position: relative;
+    left: 50%;
+    right: -50%;
+    top: -50%;
+    bottom: -50%;
+    margin: auto;
+    min-height: 10%;
+    min-width: 10%;
+    opacity: 0%;
+}
+.oscurece:hover { filter:brightness(50%); }
+.oscurece:hover + .mostrarModal { opacity:100%; }
+.oscurece:hover .mostrarModal { opacity:100%; }
+.mostrarModal:hover { opacity:100%; }
